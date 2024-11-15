@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vidsky - Snag Videos & GIFs from Bluesky!</title>
+
+	<!-- General Meta -->
+	<meta name="description" content="Vidsky: Quickly download GIFs and videos embedded in Bluesky posts. Fast, private, and hassle-free.">
+	<meta name="author" content="Mario Zechner">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Vidsky - Snag Videos & GIFs from Bluesky!">
+	<meta property="og:description" content="Quickly download GIFs and videos embedded in Bluesky posts. Fast, private, and hassle-free.">
+	<meta property="og:image" content="thumb.png">
+	<meta property="og:url" content="https://your-website.com">
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Vidsky - Snag Videos & GIFs from Bluesky!">
+	<meta name="twitter:description" content="Quickly download GIFs and videos embedded in Bluesky posts. Fast, private, and hassle-free.">
+	<meta name="twitter:image" content="thumb.png">
+	<meta name="twitter:site" content="@yourTwitterHandle">
+
+	<!-- Bluesky / Other -->
+	<meta name="bluesky:card" content="summary_large_image">
+	<meta name="bluesky:title" content="Vidsky - Snag Videos & GIFs from Bluesky!">
+	<meta name="bluesky:description" content="Quickly download GIFs and videos embedded in Bluesky posts. Fast, private, and hassle-free.">
+	<meta name="bluesky:image" content="thumb.png">
+
+	<!-- Favicon -->
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="style.css">
+    <script src="/assets/ffmpeg/package/dist/umd/ffmpeg.js"></script>
+    <script src="/assets/util/package/dist/umd/index.js"></script>
+</head>
+<body>
+    <div class="main-content">
+        <header>Vidsky</header>
+        <div style="text-align: center;">Download GIFs and videos embedded in Bluesky posts</div>
+        <div style="font-size: 10px; font-style: italic; margin-top: 0.5em;">* does not work for YouTube, Twitch and other external embeds</div>
+        <div class="container" style="margin-top: 2em;">
+            <input id="postUrl" type="text" class="input-field" placeholder="Enter Bluesky post URL">
+            <button id="download" class="button" disabled>Download</button>
+            <div id="progressText" style="margin-top: 1em; display: none;"></div>
+            <img id="thumb" style="margin-top: 1em; max-width: 100%; border-radius: 8px; display: none;"></img>
+        </div>
+    </div>
+    <footer>
+        <div>Made with spucke & tixo by <a href="https://bsky.app/profile/badlogic.bsky.social" target="_blank">Mario Zechner</a></div>
+        <div><a href="https://github.com/badlogic/vidsky">Sauce</a></div>
+        <div><a href="https://cards-for-ukraine.at">Consider donating 🇺🇦</a></div>
+        <div style="max-width: 320px; font-size: 8px; margin-top: 1em;">This page respects your privacy and does not collect any data. Everything happens on your device.</div>
+    </footer>
+    <script src="build/index.js"></script>
+</body>
+</html>

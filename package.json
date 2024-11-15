@@ -1,0 +1,20 @@
+{
+  "name": "vidsky",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --outfile=html/build/index.js --platform=browser",
+    "dev": "esbuild src/index.ts --bundle --outfile=html/build/index.js --platform=browser --sourcemap=inline --watch=forever & npx live-server html --port=3000 --open=/"
+  },
+  "dependencies": {
+    "@atproto/api": "0.13.16",
+    "tar": "^7.4.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.24.0",
+    "live-server": "1.2.2"
+  }
+}

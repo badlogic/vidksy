@@ -1,0 +1,5 @@
+docker/data
+html/assets
+html/build/index.js
+node_modules
+.DS_Store
