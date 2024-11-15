@@ -14,7 +14,7 @@ npm run dev
 npm run build
 ```
 
-If you want to deploy Vidsky yourself, just use the `build` script, then rsync the `html/` folder to a web route.
+If you want to deploy Vidsky yourself, just use the `build` script, then rsync the `html/` folder to a web server, like it's 2003.
 
 Use the `dev` launch configuration in VS Code to start a new Chrome session with debugging support for fancy pants developments.
 
