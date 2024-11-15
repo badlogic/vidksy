@@ -1,4 +1,4 @@
-# Vidksy
+# Vidsky
 Simple client-side only web-app that lets you enter a Bluesky post URL and downloads any GIF or video contained in it. Bluesky uses [Http Live Streaming](https://en.wikipedia.org/wiki/HTTP_Live_Streaming), so the web app includes a [WASM build of FFMPEG](https://github.com/ffmpegwasm/ffmpeg.wasm) to convert the video to a plain old MP4.
 
 [Use Vidsky](https://vidsky.mariozechner.at)
