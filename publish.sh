@@ -1,10 +1,8 @@
 #!/bin/bash
 set -e
-blargh --in src --out html
 host=slayer.marioslab.io
 host_dir=/home/badlogic/vidsky.mariozechner.at
 
-ssh -t $host "mkdir -p $host_dir/docker/data/postgres"
 rsync -avz --exclude node_modules --exclude .git --exclude docker/data ./ $host:$host_dir
 
 if [ "$1" == "server" ]; then
