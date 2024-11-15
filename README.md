@@ -14,7 +14,7 @@ npm run dev
 npm run build
 ```
 
-If you want to deploy Vidsky yourself, just use trigger a build via `npm run build`, then rsync the `html/` folder to a web server, like it's 2003.
+If you want to deploy Vidsky yourself, just use trigger a build via `npm run build`, then rsync the `html/` folder to a web server, like it's 2003. You can probably cut down on the files in `assets/` significantly, but I couldn't be bothered to fix that up in `download-ffmpeg.js`. PRs welcome.
 
 Use the `dev` launch configuration in VS Code to start a new Chrome session with debugging support for fancy pants developments.
 
