@@ -17,3 +17,5 @@ npm run build
 If you want to deploy Vidsky yourself, just use the `build` script, then rsync the `html/` folder to a web route.
 
 Use the `dev` launch configuration in VS Code to start a new Chrome session with debugging support for fancy pants developments.
+
+Ignore all the stuff in `docker/` and the bash scripts in the root directory. Those are for my own infrastructure.
